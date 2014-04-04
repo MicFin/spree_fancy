@@ -45,6 +45,46 @@ This theme alters the look and feel of the spree frontend, using the [bxSlider](
 
 This is achieved by overriding the index action in the Spree::HomeController using a Decorator. Have a look at the [Decorators Guide](http://guides.spreecommerce.com/developer/view.html) for more information about using decorators to customize your application's logic.
 
+Customization
+=============
+
+In order to changeyour CSS and Javascript you will want to make a local copy and make your changes there.
+
+For changing the variables there is a file pre-made for this.  To change the variables use the variables_override.css.scss and remove the !default
+
+What you would see in Spree Fancy
+https://github.com/spree/spree_fancy/blob/master/app/assets/stylesheets/spree/fancy/variables.css.scss
+$c_green:       #8dba53 !default;  /* Spree green    */
+$c_red:         #e45353 !default;  /* Error red      */
+$c_blue:        #50A2F3 !default;
+$c_orange:      #ff9600 !default;
+
+What you would do in your App
+YourApp/app/assets/stylesheets/spre/fancy/variables_override.css.scss
+$c_green:       #399E48;  /* lighter green    */
+$c_red:         #e45353 !default;   */
+$c_blue:        #F68D3C;
+$c_orange:      #F16521;  
+
+For CSS classes and for Javascript files just make a local copy and edit that.
+
+What you would see in Spree Fancy
+https://github.com/spree/spree_fancy/blob/master/app/assets/stylesheets/spree/fancy/components/_slider.scss
+#home-slider {
+  h1 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+
+What you would edit in your App
+Yourapp/app/assets/stylesheets/spree/fancy/components/_slider.scss
+#home-slider {
+  h1 {
+    font-size: 40px !important;
+    font-weight: 600 !important;
+  }
+
+
 Creating Your Own Extensions
 ============================
 
