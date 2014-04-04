@@ -48,7 +48,7 @@ This is achieved by overriding the index action in the Spree::HomeController usi
 Customization
 =============
 
-In order to changeyour CSS and Javascript you will want to make a local copy and make your changes there.
+In order to change the CSS and Javascript you will want to make a local copy and make your changes there.
 
 #####For changing the variables there is a file pre-made for this.  To change the variables use the variables_override.css.scss and remove the !default
 
@@ -73,7 +73,7 @@ $c_orange:      #F16521;
 What you would see in Spree Fancy
 https://github.com/spree/spree_fancy/blob/master/app/assets/stylesheets/spree/fancy/components/_slider.scss
 ```
-home-slider {
+#home-slider {
   h1 {
     font-size: 24px !important;
     font-weight: 600 !important;
@@ -82,7 +82,7 @@ home-slider {
 What you would edit in your App
 Yourapp/app/assets/stylesheets/spree/fancy/components/_slider.scss
 ```
-home-slider {
+#home-slider {
   h1 {
     font-size: 40px !important;
     font-weight: 600 !important;
